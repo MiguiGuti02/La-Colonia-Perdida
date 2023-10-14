@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+/Temp/*
+La-Colonia-Perdida/Temp/FSTimeGet-27bc0bcb361949448a46d6508589fc63
+La-Colonia-Perdida/Temp/FSTimeGet-5511f85ac4e1c5a41a8e2a1aef12b98e
+La-Colonia-Perdida/Temp/FSTimeGet-738e5530fce5c634bab21a13817a824a
+La-Colonia-Perdida/Temp/UnityLockfile

@@ -354,7 +354,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Camara.cs"
 "Assets/Scripts/Leopardo.cs"
-"Assets/Scripts/Pingüino.cs"
+"Assets/Scripts/MovimientoGuino.cs"
 -langversion:9.0
 
 /deterministic
