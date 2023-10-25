@@ -9,14 +9,16 @@ public class MovimientoGuino : MonoBehaviour
 
     private float dirH;
 
-    private float aceleracion = 8f;
-    private float deceleracion = 12f;
+    [SerializeField] private float aceleracion = 8f;
+    [SerializeField] private float deceleracion = 12f;
     private float velocidad;
-    private float vMax = 8f;
+    [SerializeField] private float vMax = 8f;
 
-    private float fuerzaSalto = 8f;
+    [SerializeField] private float fuerzaSalto = 8f;
 
     private bool miraD = true;
+
+    [SerializeField]private BoxCollider2D coll;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -62,7 +64,12 @@ public class MovimientoGuino : MonoBehaviour
 */
     private bool EnTierra()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        //return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        //Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.01f);
+        //return Physics2D.OverlapCircle(groundCheck.position, groundCheckSize, groundLayer);
+
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
     }
 
     private void Aceleracion()
