@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 1617308728}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 2109271023}
   m_Layer: 0
   m_Name: Leopardo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,6 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9145b48a65ce9a247917c236e0b003fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 2
 --- !u!50 &2109271023
 Rigidbody2D:
   serializedVersion: 4
