@@ -353,6 +353,7 @@
 -analyzer:"D:/Apps/Unity Hub/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Apps/Unity Hub/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Camara.cs"
+"Assets/Scripts/CheckPoint.cs"
 "Assets/Scripts/Leopardo.cs"
 "Assets/Scripts/MovimientoGuino.cs"
 -langversion:9.0

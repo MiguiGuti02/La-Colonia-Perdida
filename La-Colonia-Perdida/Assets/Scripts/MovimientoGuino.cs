@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoGuino : MonoBehaviour
 {
+
+    // Reinicio lvl 
+    [SerializeField] private float limiteY = -40f; // Establece el límite en el que quieres reiniciar el juego
 
     private Rigidbody2D rb;
 
@@ -43,6 +47,43 @@ public class MovimientoGuino : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        // Comprueba si el jugador está por debajo del límite Y
+        if (transform.position.y < limiteY)
+        {
+            // Llama a una función para reiniciar el juego (puedes implementar esta función según tus necesidades)
+            ReiniciarJuego();
+        }
+    }
+
+    void ReiniciarJuego()
+    {
+        // Encuentra todos los objetos de checkpoint en la escena
+        Checkpoint[] checkpoints = FindObjectsOfType<Checkpoint>();
+
+        // Encuentra el checkpoint más reciente alcanzado
+        Checkpoint latestCheckpoint = null;
+        foreach (Checkpoint checkpoint in checkpoints)
+        {
+            if (checkpoint.isCheckpointReached)
+            {
+                latestCheckpoint = checkpoint;
+            }
+        }
+
+        // Si se encontró un checkpoint válido, reposiciona al jugador en ese checkpoint
+        if (latestCheckpoint != null)
+        {
+            Vector3 respawnPosition = latestCheckpoint.transform.position;
+            respawnPosition.z = 0;
+            transform.position = latestCheckpoint.transform.position;
+        }
+        else
+        {
+            // Si no se encontró ningún checkpoint, puedes reiniciar el juego desde una posición predeterminada.
+            // Aquí puedes definir una posición de inicio predeterminada o simplemente reiniciar la escena.
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -111,4 +152,6 @@ public class MovimientoGuino : MonoBehaviour
             }
         }
     }
+
+   
 }
