@@ -60,11 +60,11 @@ public class MovimientoGuino : MonoBehaviour
     void ReiniciarJuego()
     {
         // Encuentra todos los objetos de checkpoint en la escena
-        Checkpoint[] checkpoints = FindObjectsOfType<Checkpoint>();
+        CheckpointController[] checkpoints = FindObjectsOfType<CheckpointController>();
 
         // Encuentra el checkpoint más reciente alcanzado
-        Checkpoint latestCheckpoint = null;
-        foreach (Checkpoint checkpoint in checkpoints)
+        CheckpointController latestCheckpoint = null;
+        foreach (CheckpointController checkpoint in checkpoints)
         {
             if (checkpoint.isCheckpointReached)
             {
