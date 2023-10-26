@@ -8,7 +8,7 @@ public class Camara : MonoBehaviour
 
     void LateUpdate()
     {
-        // Actualiza la posición de la cámara de manera suave para seguir al jugador
+        // Actualiza la posiciï¿½n de la cï¿½mara de manera suave para seguir al jugador
         Vector3 desiredPosition = new Vector3(target.position.x + offset.x, transform.position.y, transform.position.z);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
