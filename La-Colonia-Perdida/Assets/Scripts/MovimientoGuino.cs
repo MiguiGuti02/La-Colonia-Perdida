@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MovimientoGuino : MonoBehaviour
 {
 
     // Reinicio lvl 
-    [SerializeField] private float limiteY = -40f; // Establece el límite en el que quieres reiniciar el juego
+    [SerializeField] private float limiteY = -40f; // Establece el lï¿½mite en el que quieres reiniciar el juego
 
     private Rigidbody2D rb;
 
@@ -20,18 +21,18 @@ public class MovimientoGuino : MonoBehaviour
 
     [SerializeField] private float fuerzaSalto = 8f;
 
-    private bool miraD = true;
+    public static int nKrill=0;
 
     [SerializeField]private BoxCollider2D coll;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-
+    [SerializeField] private GameObject FinJuego;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        miraD = true;
+        updateText();
     }
 
     // Update is called once per frame
@@ -39,7 +40,6 @@ public class MovimientoGuino : MonoBehaviour
     {
         dirH = Input.GetAxisRaw("Horizontal");
         Aceleracion();
-        //DarVuelta();
         if (Input.GetKeyDown(KeyCode.Space) && EnTierra())
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
@@ -49,10 +49,10 @@ public class MovimientoGuino : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        // Comprueba si el jugador está por debajo del límite Y
+        // Comprueba si el jugador estï¿½ por debajo del lï¿½mite Y
         if (transform.position.y < limiteY)
         {
-            // Llama a una función para reiniciar el juego (puedes implementar esta función según tus necesidades)
+            // Llama a una funciï¿½n para reiniciar el juego (puedes implementar esta funciï¿½n segï¿½n tus necesidades)
             ReiniciarJuego();
         }
     }
@@ -62,7 +62,7 @@ public class MovimientoGuino : MonoBehaviour
         // Encuentra todos los objetos de checkpoint en la escena
         CheckpointController[] checkpoints = FindObjectsOfType<CheckpointController>();
 
-        // Encuentra el checkpoint más reciente alcanzado
+        // Encuentra el checkpoint mï¿½s reciente alcanzado
         CheckpointController latestCheckpoint = null;
         foreach (CheckpointController checkpoint in checkpoints)
         {
@@ -71,8 +71,8 @@ public class MovimientoGuino : MonoBehaviour
                 latestCheckpoint = checkpoint;
             }
         }
-
-        // Si se encontró un checkpoint válido, reposiciona al jugador en ese checkpoint
+        
+        // Si se encontrï¿½ un checkpoint vï¿½lido, reposiciona al jugador en ese checkpoint
         if (latestCheckpoint != null)
         {
             Vector3 respawnPosition = latestCheckpoint.transform.position;
@@ -81,10 +81,13 @@ public class MovimientoGuino : MonoBehaviour
         }
         else
         {
-            // Si no se encontró ningún checkpoint, puedes reiniciar el juego desde una posición predeterminada.
-            // Aquí puedes definir una posición de inicio predeterminada o simplemente reiniciar la escena.
+            // Si no se encontrï¿½ ningï¿½n checkpoint, puedes reiniciar el juego desde una posiciï¿½n predeterminada.
+            // Aquï¿½ puedes definir una posiciï¿½n de inicio predeterminada o simplemente reiniciar la escena.
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        nKrill = 0;
+        updateText();
     }
 
     private void FixedUpdate()
@@ -92,17 +95,6 @@ public class MovimientoGuino : MonoBehaviour
         rb.velocity = new Vector2(velocidad, rb.velocity.y);
     }
 
-/*    private void DarVuelta()
-    {
-        if(miraD && dirH <0f || !miraD && dirH > 0f)
-        {
-            miraD = !miraD;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
-*/
     private bool EnTierra()
     {
         //return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
@@ -112,7 +104,7 @@ public class MovimientoGuino : MonoBehaviour
 
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
     }
-
+    
     private void Aceleracion()
     {
         if(dirH==0)
@@ -153,5 +145,34 @@ public class MovimientoGuino : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Krill")
+        {
+            sumarKrill();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "FinPartida")
+        {
+
+            FinJuego.SetActive(true);
+            Time.timeScale = 0f;
+            
+        }
+
+    }
+
+    private static void sumarKrill()
+    {
+        MovimientoGuino.nKrill++;
+       // Debug.Log(MovimientoGuino.nKrill);
+        updateText();
+    }
+    private static void updateText()
+    {
+        GameObject puntos = GameObject.FindGameObjectWithTag("UI");
+        // cuando tengamos ese objeto buscamos su componente tipo texto y le vamos a poner ...
+        puntos.GetComponent<Text>().text="Krill:"+nKrill;
+    }
    
 }

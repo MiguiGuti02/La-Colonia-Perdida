@@ -168,9 +168,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1290561594872477340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b612a5f5e91725646a2a55de2ead31f4, type: 3}
+  m_Script: {fileID: 11500000, guid: eedeb561624d65c409e053b93a4dc772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 16.7, y: 13, z: 0}
-  endPosition: {x: 52.1, y: 13, z: 0}
-  speed: 3
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
+  speed: 2
