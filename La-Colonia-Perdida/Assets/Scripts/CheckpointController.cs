@@ -12,7 +12,9 @@ public class CheckpointController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isCheckpointReached = true;
+
             Debug.Log("Checkpoint reached!");
         }
     }
+   
 }
