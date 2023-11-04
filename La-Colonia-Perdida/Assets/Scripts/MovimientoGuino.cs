@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -29,8 +30,10 @@ public class MovimientoGuino : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private GameObject FinJuego;
+    public GameObject Krill;
+    public static List<float> posicionKrill=new List<float>();
     // Start is called before the first frame update
-    void Start()
+    void Start()    
     {
         rb = GetComponent<Rigidbody2D>();
         updateText();
@@ -76,9 +79,28 @@ public class MovimientoGuino : MonoBehaviour
         // Si se encontr� un checkpoint v�lido, reposiciona al jugador en ese checkpoint
         if (latestCheckpoint != null)
         {
+            foreach (var pos in posicionKrill)
+            {
+                Debug.Log(pos.ToString());
+            }
             Vector3 respawnPosition = latestCheckpoint.transform.position;
             respawnPosition.z = 0;
             transform.position = latestCheckpoint.transform.position;
+
+            do
+            {
+                float x = posicionKrill[0];
+                float y= posicionKrill[1];
+                Instantiate(Krill, new Vector3(x,y,0),Quaternion.identity);
+                posicionKrill.RemoveAt(0);
+                posicionKrill.RemoveAt(0);
+            } while(posicionKrill.Count > 0);
+
+            if (posicionKrill.Count == 0)
+            {
+                Debug.Log("lista vacia");
+            }
+
         }
         else
         {
@@ -150,6 +172,22 @@ public class MovimientoGuino : MonoBehaviour
     {
         if (collision.gameObject.tag == "Krill")
         {
+            // Encuentra todos los objetos de checkpoint en la escena
+            CheckpointController[] checkpoints = FindObjectsOfType<CheckpointController>();
+
+            // Encuentra el checkpoint m�s reciente alcanzado
+            CheckpointController latestCheckpoint = null;
+            foreach (CheckpointController checkpoint in checkpoints)
+            {
+                if (checkpoint.isCheckpointReached)
+                {
+                    latestCheckpoint = checkpoint;
+                }
+            }
+            if (latestCheckpoint != null) {
+                posicionKrill.Add(collision.gameObject.transform.position.x);
+                posicionKrill.Add(collision.gameObject.transform.position.y);
+            }
             sumarKrill();
             Destroy(collision.gameObject);
         }
