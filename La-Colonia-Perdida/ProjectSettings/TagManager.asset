@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Suelo
+  - Krill
+  - UI
+  - FinPartida
+  - Limites
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Suelo
   - 
   - 
   - 
