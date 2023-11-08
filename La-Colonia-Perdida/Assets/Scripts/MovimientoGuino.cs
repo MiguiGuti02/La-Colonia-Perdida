@@ -13,6 +13,8 @@ public class MovimientoGuino : MonoBehaviour
     private Rigidbody2D rb;
 
     private float dirH;
+    private float deslizar;
+    private float cuesta=0; //1 hacia arriba, -1 hacia abajo, 0 plano
 
     [SerializeField] private float aceleracion = 8f;
     [SerializeField] private float deceleracion = 12f;
@@ -40,7 +42,9 @@ public class MovimientoGuino : MonoBehaviour
     void Update()
     {
         dirH = Input.GetAxisRaw("Horizontal");
+        deslizar = Input.GetAxisRaw("Vertical");
         Aceleracion();
+        Deslizamiento();
         if (Input.GetKeyDown(KeyCode.Space) && EnTierra())
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
@@ -96,6 +100,13 @@ public class MovimientoGuino : MonoBehaviour
         rb.velocity = new Vector2(velocidad, rb.velocity.y);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("CuestaArriba")) cuesta = 1;
+        else if(collision.gameObject.CompareTag("CuestaAbajo")) cuesta = -1;
+        else cuesta = 0;
+    }
+
     private bool EnTierra()
     {
         //return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
@@ -144,6 +155,19 @@ public class MovimientoGuino : MonoBehaviour
                 }
             }
         }
+    }
+
+    void Deslizamiento(){
+        Debug.Log("hola " + cuesta);
+        if(deslizar==-1 && EnTierra() && cuesta != 1) 
+        {
+            if (cuesta==-1) deceleracion=0f;
+            else deceleracion=4f;
+        }
+        else {
+            deceleracion=12f;
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -9,6 +9,8 @@ TagManager:
   - UI
   - FinPartida
   - Limites
+  - CuestaArriba
+  - CuestaAbajo
   layers:
   - Default
   - TransparentFX

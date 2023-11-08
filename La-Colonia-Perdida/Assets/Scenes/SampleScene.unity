@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 755691208}
   m_Layer: 10
   m_Name: Suelo (14)
-  m_TagString: Untagged
+  m_TagString: CuestaArriba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4604,7 +4604,7 @@ GameObject:
   - component: {fileID: 1671810747}
   m_Layer: 10
   m_Name: Suelo (7)
-  m_TagString: Untagged
+  m_TagString: CuestaAbajo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
