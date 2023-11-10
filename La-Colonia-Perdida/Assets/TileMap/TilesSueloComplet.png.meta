@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b461c3e433eae14ba5899e2008e9664
+guid: 4f01c9b3a8779284ab0c15ef55d86a01
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilesSueloBasico_0
+      name: TilesSueloBasico 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50feaaf5d839da442a36e53c8fcec87d
-      internalID: -919976802
+      spriteID: e43389c12664287409647921fa5a412d
+      internalID: 1887432363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_1
+      name: TilesSueloBasico 1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3e38611f7e72c44a9926e1e748b62ad
-      internalID: 1609940436
+      spriteID: 6acecd157331f594eaf401ed87d88b87
+      internalID: -380296873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_2
+      name: TilesSueloBasico 1_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +166,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a1d9da7fab84a34c9d6a7c9d8fb2f5f
-      internalID: -519601547
+      spriteID: b52265fcc1b7a94469684b2f1f43ddbb
+      internalID: -1504977652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_3
+      name: TilesSueloBasico 1_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0dbd047689a5e41863a50e9ec22d84
+      internalID: 1507040775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c99101589b99a148b8a062504283d84
-      internalID: -555013196
+      spriteID: 27d4b8cf3106449419553fd55ff4fe28
+      internalID: -1142460175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_4
+      name: TilesSueloBasico 1_5
       rect:
         serializedVersion: 2
         x: 16
@@ -208,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5ba37cffc690f44a82266009fcf4947
-      internalID: -1466170102
+      spriteID: 2132f166a21cbc34793a6f82dbba7078
+      internalID: -2098620842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_5
+      name: TilesSueloBasico 1_6
       rect:
         serializedVersion: 2
         x: 32
@@ -229,14 +250,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa2fafece45b14045b4c4e6d3652048a
-      internalID: 1744053295
+      spriteID: cfa57ef554a0bfa4481c71bf8e969a15
+      internalID: -1607270059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_6
+      name: TilesSueloBasico 1_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68baf464a0f28d64dadbae0472168c71
+      internalID: 1060447778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 053cf03067d6ad4468d9b2ae3bf2f1d2
-      internalID: -737339845
+      spriteID: f59aa3fe1ce89f945834d2f7cd749553
+      internalID: -1017172353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_7
+      name: TilesSueloBasico 1_9
       rect:
         serializedVersion: 2
         x: 16
@@ -271,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13bc9dcbf34ce724f9bb4d33bd847c60
-      internalID: -1105172262
+      spriteID: 1128b4e145ef77447a368af9d54414b6
+      internalID: -186286217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSueloBasico_8
+      name: TilesSueloBasico 1_10
       rect:
         serializedVersion: 2
         x: 32
@@ -292,8 +334,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25ad4a4664cd0cb47a921a3db4f2fa5c
-      internalID: 1234933716
+      spriteID: 1da7d3bbb0774004594d530c35cafcd6
+      internalID: -2069415204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eccd11c3b37664a8cb5d30ccfb94d3
+      internalID: -488077640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0747f4a1100a48418839fa684ea827b
+      internalID: 1360111719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db7a47cde793464fb0609d974261465
+      internalID: 200273166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd51cb943d315c042bab149fc1315042
+      internalID: 900358028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesSueloBasico 1_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b9882cb60c5274882cd24b5abaaebc
+      internalID: -107167513
       vertices: []
       indices: 
       edges: []
@@ -301,7 +448,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5a098337d08a66c479ae669c0f3a2a9a
+    spriteID: 149927f69d9d512409392ab516aa6f70
     internalID: 0
     vertices: []
     indices: 
@@ -309,15 +456,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TilesSueloBasico_0: -919976802
-      TilesSueloBasico_1: 1609940436
-      TilesSueloBasico_2: -519601547
-      TilesSueloBasico_3: -555013196
-      TilesSueloBasico_4: -1466170102
-      TilesSueloBasico_5: 1744053295
-      TilesSueloBasico_6: -737339845
-      TilesSueloBasico_7: -1105172262
-      TilesSueloBasico_8: 1234933716
+      TilesSueloBasico 1_0: 1887432363
+      TilesSueloBasico 1_1: -380296873
+      TilesSueloBasico 1_10: -2069415204
+      TilesSueloBasico 1_11: -488077640
+      TilesSueloBasico 1_12: 1360111719
+      TilesSueloBasico 1_13: 200273166
+      TilesSueloBasico 1_14: 900358028
+      TilesSueloBasico 1_15: -107167513
+      TilesSueloBasico 1_2: -1504977652
+      TilesSueloBasico 1_3: 1507040775
+      TilesSueloBasico 1_4: -1142460175
+      TilesSueloBasico 1_5: -2098620842
+      TilesSueloBasico 1_6: -1607270059
+      TilesSueloBasico 1_7: 1060447778
+      TilesSueloBasico 1_8: -1017172353
+      TilesSueloBasico 1_9: -186286217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
