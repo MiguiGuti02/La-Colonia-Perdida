@@ -26,7 +26,7 @@ public class MovimientoGuino : MonoBehaviour
     public static int nKrill=0;
 
 
-    [SerializeField]private BoxCollider2D coll;
+    [SerializeField]private CapsuleCollider2D coll; //cambiar esto a BoxCollider
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
