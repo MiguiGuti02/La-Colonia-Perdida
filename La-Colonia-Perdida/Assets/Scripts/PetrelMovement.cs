@@ -4,33 +4,22 @@ using UnityEngine;
 
 public class PetrelMovement : MonoBehaviour
 {
-    public Vector3 startPosition;
-    public Vector3 endPosition;
+    public float movementDistance = 5.0f; // Distancia máxima de movimiento hacia la izquierda y derecha
     public float speed = 2.0f;
 
-    private Vector3 currentTarget;
+    private Vector3 startPosition;
 
     void Start()
     {
-        currentTarget = endPosition;
+        startPosition = transform.position;
     }
 
     void Update()
     {
-        // Mueve el objeto hacia el objetivo actual
-        transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime);
+        // Calcula el nuevo valor de posición X
+        float newX = startPosition.x + Mathf.PingPong(Time.time * speed, movementDistance * 2) - movementDistance;
 
-        // Si el objeto alcanza el objetivo, cambia el objetivo
-        if (transform.position == currentTarget)
-        {
-            if (currentTarget == startPosition)
-            {
-                currentTarget = endPosition;
-            }
-            else
-            {
-                currentTarget = startPosition;
-            }
-        }
+        // Actualiza la posición solo en el eje X
+        transform.position = new Vector3(newX, startPosition.y, startPosition.z);
     }
 }
