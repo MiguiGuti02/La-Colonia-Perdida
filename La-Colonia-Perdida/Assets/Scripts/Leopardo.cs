@@ -1,46 +1,69 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Leopardo : MonoBehaviour
 {
-    public float velocidad = 3.0f; // Velocidad de movimiento del Leopardo
-    private bool moviendoseHaciaDerecha = true; // Indicador de dirección
+    [SerializeField] public float velocidad; // Velocidad de movimiento del Leopardo
+    [SerializeField] private bool moviendoseHaciaDerecha; // Indicador de dirección
+    [SerializeField] private Transform controladorSuelo;
+    [SerializeField] private float distancia;
+    private Vector3 pos;
+    private Rigidbody2D rb;
 
-    private void Update()
+    private void Start()
     {
+        pos = transform.position;
+        rb = GetComponent<Rigidbody2D>();
+    }
+    private void FixedUpdate()
+    {
+
+        RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia);
         // Mover el Leopardo
-        if (moviendoseHaciaDerecha)
+        rb.velocity = new Vector2(velocidad, rb.velocity.y);
+        if (informacionSuelo == false)
         {
-            transform.Translate(Vector3.right * velocidad * Time.deltaTime);
-        }
-        else
-        {
-            transform.Translate(Vector3.left * velocidad * Time.deltaTime);
+            CambiarDireccion();
         }
 
         // Cambiar dirección al llegar a un límite
-        if (transform.position.x >= 14.5f) // Ajusta el límite derecho según tus necesidades
+        else
         {
-            CambiarDireccion();
-        }
-        else if (transform.position.x <= 0.0f) // Ajusta el límite izquierdo según tus necesidades
-        {
-            CambiarDireccion();
-        }
-    }
+            if (moviendoseHaciaDerecha && transform.position.x >= pos.x + 5f) // Ajusta el límite derecho según tus necesidades
+            {
 
-    // Cuando colisiona con el jugador
+                CambiarDireccion();
+            }
+            else if (!moviendoseHaciaDerecha && transform.position.x <= pos.x - 5.3f) // Ajusta el límite izquierdo según tus necesidades
+            {
+                CambiarDireccion();
+            }
+
+        }
+
+
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("El Leopardo ha colisionado con el jugador.");
-            CambiarDireccion(); // Cambia de dirección al colisionar con el jugador
-        }
+        CambiarDireccion();
+
+    }
+    // Método para cambiar la dirección
+    public void CambiarDireccion()
+    {
+
+        moviendoseHaciaDerecha = !moviendoseHaciaDerecha;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        velocidad *= -1;
+
     }
 
-    // Método para cambiar la dirección
-    private void CambiarDireccion()
+
+    private void OnDrawGizmos()
     {
-        moviendoseHaciaDerecha = !moviendoseHaciaDerecha;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
     }
+
 }
