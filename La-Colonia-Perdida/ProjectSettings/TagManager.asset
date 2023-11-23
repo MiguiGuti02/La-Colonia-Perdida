@@ -9,6 +9,8 @@ TagManager:
   - UI
   - FinPartida
   - Limites
+  - Leopardo
+  - UIvida
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,9 @@ using UnityEngine;
 public class CheckpointController : MonoBehaviour
 {
     public bool isCheckpointReached = false;
+    public static int guardarKrill;
+    public static int guardarVida;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,9 +15,11 @@ public class CheckpointController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isCheckpointReached = true;
-
+            guardarKrill = MovimientoGuino.nKrill;
+            guardarVida = MovimientoGuino.vida;
+            Debug.Log(guardarVida);
             Debug.Log("Checkpoint reached!");
         }
     }
-   
+
 }
