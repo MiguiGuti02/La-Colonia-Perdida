@@ -9,6 +9,13 @@ TagManager:
   - UI
   - FinPartida
   - Limites
+  - Leopardo
+  - UIvida
+<<<<<<< HEAD
+=======
+  - Orca
+  - Sardina
+>>>>>>> f3d1ca2aa126c444166ac60cc6ffad4807930afb
   layers:
   - Default
   - TransparentFX
@@ -16,8 +23,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Jugador
+  - Enemigo
   - 
   - 
   - Suelo
