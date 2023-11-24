@@ -387,6 +387,7 @@
 "Assets/Scripts/MenuInicio.cs"
 "Assets/Scripts/MenuNiveles.cs"
 "Assets/Scripts/MovimientoGuino.cs"
+"Assets/Scripts/movimientoorca.cs"
 "Assets/Scripts/PetrelMovement.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

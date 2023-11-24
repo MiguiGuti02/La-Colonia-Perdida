@@ -1,4 +1,5 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1700230697567761, "dur":211117, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1700230697778889, "dur":605, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1700230697779684, "dur":101, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -6609,4 +6610,378 @@
 ,{ "pid":12345, "tid":4, "ts":1700230718820082, "dur":325, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":4, "ts":1700230718820426, "dur":116128, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1700230718946278, "dur":27920, "ph":"X", "name": "ProfilerWriteOutput" }
+=======
+,{ "pid":12345, "tid":0, "ts":1700755074976787, "dur":19477, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755074996272, "dur":91, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755074996394, "dur":389, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755074996804, "dur":3037, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755074999842, "dur":8934299, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755083934144, "dur":404, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755083934582, "dur":58, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755083934768, "dur":2311, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1700755074996839, "dur":3011, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1700755074999854, "dur":4589, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1700755075006087, "dur":1005, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1700755075007098, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755075007189, "dur":5478, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1700755075012669, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1700755075012987, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075013104, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075013179, "dur":155, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075013336, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075013558, "dur":209, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075013768, "dur":1020, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075014790, "dur":258, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075015050, "dur":238, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075015290, "dur":107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075015398, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075015549, "dur":2802, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075018353, "dur":2810, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075021166, "dur":5337, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075026505, "dur":159, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playerc7487ffd-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1700755075026742, "dur":70246, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.BuildTools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075096991, "dur":1071, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075098065, "dur":169055, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.CSharpSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075267122, "dur":712, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.DotNet.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075267837, "dur":525, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.NativeProgramSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075268364, "dur":686, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Stevedore.Program.exe" }}
+,{ "pid":12345, "tid":1, "ts":1700755075269052, "dur":473, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TinyProfiler2.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075269532, "dur":60789, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.GNU.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075330324, "dur":29740, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.LLVM.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075360067, "dur":94094, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.VisualStudio.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075454163, "dur":70985, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.Xcode.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075525152, "dur":811, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Tools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075525965, "dur":606, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TundraBackend.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075526573, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.VisualStudioSolution.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075526660, "dur":190, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075526851, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075527039, "dur":165, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeLocalCacheTool.exe" }}
+,{ "pid":12345, "tid":1, "ts":1700755075527204, "dur":4844, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075532049, "dur":555, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\NiceIO.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075532605, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075532672, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075532768, "dur":186, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075532955, "dur":369, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.exe" }}
+,{ "pid":12345, "tid":1, "ts":1700755075533325, "dur":93296, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\SharpYaml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075626623, "dur":28620, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075655245, "dur":64837, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075720084, "dur":47170, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075767256, "dur":28947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075796205, "dur":38435, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075834643, "dur":546, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075835191, "dur":816, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.BuildLogic.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075836009, "dur":229, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075836239, "dur":408, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Linker.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075836647, "dur":70447, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Options.dll" }}
+,{ "pid":12345, "tid":1, "ts":1700755075007096, "dur":900000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755075907283, "dur":64, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1700755075907823, "dur":124973, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755076037202, "dur":103, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755076037202, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755076037324, "dur":920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1700755076038247, "dur":7895881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1700755074996917, "dur":2951, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1700755074999871, "dur":808, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1700755075000679, "dur":3789, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1700755075004488, "dur":10828, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":2, "ts":1700755075004468, "dur":10850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1700755075015413, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1700755075016547, "dur":50599, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075016545, "dur":50610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075067660, "dur":2135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075069875, "dur":4118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075074082, "dur":5301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075079473, "dur":6641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1700755075086222, "dur":2163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1700755075088447, "dur":8845679, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1700755074996876, "dur":2982, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1700755074999864, "dur":750, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1700755075000615, "dur":3834, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1700755075004478, "dur":41501, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1700755075004453, "dur":41528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1700755075047183, "dur":1984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1700755075049241, "dur":3819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075053137, "dur":3897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075057132, "dur":4021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075061221, "dur":4577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075065872, "dur":4173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075070120, "dur":4204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075074436, "dur":5370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075079913, "dur":5961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1700755075085944, "dur":2035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1700755075088054, "dur":5463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1700755075093578, "dur":8840528, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1700755074996970, "dur":2911, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1700755074999884, "dur":946, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1700755075000831, "dur":3629, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1700755075004468, "dur":599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1700755075027850, "dur":2036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1700755075029951, "dur":5253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075035281, "dur":6007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075041360, "dur":9055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075050511, "dur":4175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075054773, "dur":5356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075060275, "dur":4739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075065088, "dur":4812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075069993, "dur":4326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075074506, "dur":6957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1700755075081540, "dur":23178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1700755075104775, "dur":8829334, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1700755074997009, "dur":2881, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1700755074999894, "dur":756, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1700755075000651, "dur":3796, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1700755075004470, "dur":86402, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1700755075004454, "dur":86421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1700755075090904, "dur":4456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1700755075095493, "dur":8838621, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755074997057, "dur":2842, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755074999902, "dur":882, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755075000785, "dur":3677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755075004464, "dur":248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1700755075012997, "dur":1165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1700755075014210, "dur":8659, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1700755075014208, "dur":8663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1700755075022895, "dur":5173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1700755075028139, "dur":5934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075039500, "dur":99, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755075034558, "dur":5185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075039843, "dur":4492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075044401, "dur":4195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075048697, "dur":4338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075057420, "dur":84, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1700755075053115, "dur":4402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075057608, "dur":5265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075063159, "dur":4343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075067605, "dur":4938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075072624, "dur":4940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075077642, "dur":4511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1700755075082237, "dur":3323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1700755075085631, "dur":2673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1700755075088400, "dur":8845711, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1700755074997101, "dur":2806, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1700755074999910, "dur":792, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1700755075000702, "dur":3831, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1700755075004533, "dur":334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1700755075026014, "dur":330, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1700755075026362, "dur":2039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1700755075028477, "dur":5249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075033855, "dur":8928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075042867, "dur":4569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075047507, "dur":4277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075051853, "dur":8753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075060691, "dur":6945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075067901, "dur":7728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075075702, "dur":4975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075080851, "dur":6385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1700755075087313, "dur":6071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1700755075093451, "dur":8840668, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1700755074997137, "dur":2783, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1700755074999924, "dur":752, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1700755075000676, "dur":3850, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1700755075004540, "dur":10687, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1700755075004529, "dur":10700, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1700755075015395, "dur":1290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1700755075016726, "dur":112977, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1700755075016724, "dur":112982, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1700755075129837, "dur":12491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1700755075142385, "dur":8791728, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1700755074997176, "dur":2754, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1700755074999934, "dur":853, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1700755075000787, "dur":3659, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1700755075004602, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075004908, "dur":157, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075005066, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075005138, "dur":265, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075005405, "dur":593, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006000, "dur":271, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006273, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006363, "dur":426, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006791, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006871, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075006960, "dur":392, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075007354, "dur":213, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075007568, "dur":401, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075007971, "dur":155, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075008127, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075008203, "dur":529, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075008733, "dur":377, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009111, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009204, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\PackageCache\\com.unity.collections@1.2.4\\Unity.Collections.LowLevel.ILSupport\\Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009274, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009398, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\PackageCache\\com.unity.burst@1.8.8\\Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009465, "dur":91, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009557, "dur":103, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009661, "dur":259, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075009922, "dur":257, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075010181, "dur":152, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075010339, "dur":715, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075011055, "dur":79, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075011134, "dur":1381, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075012516, "dur":404, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075012922, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075013046, "dur":91, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075013139, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075013337, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075013559, "dur":201, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075013761, "dur":888, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075014650, "dur":321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075014973, "dur":220, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075015195, "dur":102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075015299, "dur":181, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075015481, "dur":2852, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075018335, "dur":2822, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075021159, "dur":12368, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":9, "ts":1700755075033529, "dur":145, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
+,{ "pid":12345, "tid":9, "ts":1700755075033675, "dur":198936, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\UPM\\ElGuinoJoder\\La-Colonia-Perdida\\La-Colonia-Perdida\\Library\\PackageCache\\com.unity.burst@1.8.8\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":9, "ts":1700755075004453, "dur":228160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":9, "ts":1700755075233590, "dur":8697247, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":10, "ts":1700755074997216, "dur":2724, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1700755074999944, "dur":222, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1700755075000166, "dur":4311, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1700755075004477, "dur":342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1700755075024813, "dur":2805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1700755075027684, "dur":3574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075031322, "dur":6707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075038110, "dur":4496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075042687, "dur":3585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075046337, "dur":5231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075051645, "dur":3429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075055153, "dur":5333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075060602, "dur":4614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075065300, "dur":4441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075069819, "dur":3832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075073734, "dur":5236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075079051, "dur":3974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1700755075083100, "dur":1515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":10, "ts":1700755075084689, "dur":4152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1700755075088923, "dur":8845202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1700755074997261, "dur":2690, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1700755074999952, "dur":4506, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1700755075004475, "dur":11739, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1700755075004460, "dur":11756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1700755075016241, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1700755075017184, "dur":58102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":11, "ts":1700755075017183, "dur":58105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/La-Colonia-Perdida.exe" }}
+,{ "pid":12345, "tid":11, "ts":1700755075075308, "dur":1886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida.exe" }}
+,{ "pid":12345, "tid":11, "ts":1700755075077265, "dur":4282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1700755075081625, "dur":2145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":11, "ts":1700755075083845, "dur":1194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1700755075085103, "dur":2809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/resources.assets" }}
+,{ "pid":12345, "tid":11, "ts":1700755075087999, "dur":5852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":11, "ts":1700755075093905, "dur":8840227, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1700755074997306, "dur":2665, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1700755074999971, "dur":4486, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1700755075004458, "dur":518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1700755075027011, "dur":2748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1700755075029836, "dur":4603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075034568, "dur":4199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075038869, "dur":6992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075045999, "dur":3622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075049689, "dur":3761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075053541, "dur":4020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075057674, "dur":5384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075063140, "dur":4512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075067738, "dur":4009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075071961, "dur":6194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075078264, "dur":5457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1700755075084269, "dur":11435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":12, "ts":1700755075095763, "dur":8838353, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1700755074997342, "dur":2638, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1700755074999980, "dur":4471, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1700755075004455, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":13, "ts":1700755075012747, "dur":1337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":13, "ts":1700755075014135, "dur":259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1700755075014751, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1700755075016411, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1700755075017147, "dur":1228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1700755075018439, "dur":5439, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075018438, "dur":5444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075023904, "dur":5207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075029178, "dur":5538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075034816, "dur":5272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075040149, "dur":4630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075049171, "dur":59, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1700755075044878, "dur":4365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075049336, "dur":4245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075053841, "dur":5422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075059364, "dur":4719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075064164, "dur":4627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075068941, "dur":4455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075073568, "dur":5925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075079573, "dur":7943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1700755075087637, "dur":6601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1700755075094284, "dur":8839837, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1700755074997381, "dur":2608, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1700755074999989, "dur":4464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1700755075004454, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":14, "ts":1700755075006198, "dur":3438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":14, "ts":1700755075009680, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1700755075010331, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1700755075011414, "dur":8642, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":14, "ts":1700755075011412, "dur":8646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1700755075020085, "dur":1267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1700755075026176, "dur":189, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1700755075021820, "dur":4558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075026538, "dur":2820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075029427, "dur":5361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075034857, "dur":8862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075043827, "dur":6171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075050068, "dur":4611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075054888, "dur":7989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075062951, "dur":4265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075067337, "dur":4715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075072194, "dur":271963, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075072147, "dur":272012, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075344182, "dur":19236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":14, "ts":1700755075363461, "dur":8570643, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1700755074997421, "dur":2577, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1700755074999998, "dur":4457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1700755075004470, "dur":10582, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":15, "ts":1700755075004456, "dur":10598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":15, "ts":1700755075015130, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":15, "ts":1700755075016207, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1700755075016389, "dur":1639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1700755075018068, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":15, "ts":1700755075018538, "dur":3432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":15, "ts":1700755075026252, "dur":136, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1700755075022136, "dur":4261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075026724, "dur":4554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075031343, "dur":6542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075037969, "dur":5371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075046645, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1700755075043457, "dur":3265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075046819, "dur":4621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075051509, "dur":3407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075055068, "dur":5283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075060436, "dur":4897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075065418, "dur":4893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075070457, "dur":4727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075075263, "dur":5370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075080780, "dur":6726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1700755075087574, "dur":6032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level0" }}
+,{ "pid":12345, "tid":15, "ts":1700755075093661, "dur":8840468, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1700755074997469, "dur":2531, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1700755075000000, "dur":4444, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1700755075004461, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1700755075025656, "dur":678, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1700755075023362, "dur":2988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/app.info" }}
+,{ "pid":12345, "tid":16, "ts":1700755075026353, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075026443, "dur":4523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075031048, "dur":4473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075035632, "dur":5180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075040905, "dur":3708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075044696, "dur":3786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075048600, "dur":4361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075053485, "dur":5234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075058824, "dur":4543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075063471, "dur":4510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075068078, "dur":4106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075072340, "dur":4575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075077003, "dur":4825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1700755075081907, "dur":2334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":16, "ts":1700755075084433, "dur":1820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":16, "ts":1700755075086360, "dur":2247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/UPM/FdVDocs/Juego/La-Colonia-Perdida_Data/level1" }}
+,{ "pid":12345, "tid":16, "ts":1700755075088716, "dur":8845385, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1700755083940726, "dur":1291, "ph":"X", "name": "ProfilerWriteOutput" }
+>>>>>>> f3d1ca2aa126c444166ac60cc6ffad4807930afb
 ,

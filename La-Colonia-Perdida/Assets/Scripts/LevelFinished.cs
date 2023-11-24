@@ -6,7 +6,9 @@ using System;
 
 public class LevelFinished : MonoBehaviour
 {
-    
+
+    [SerializeField] private GameObject CanvasPausa;
+
     // Start is called before the first frame update
     public void tryagain()
     {
@@ -15,11 +17,17 @@ public class LevelFinished : MonoBehaviour
     }
     public void menu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
-    }
-/*    public void exit()
-    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
-*/
+    public void exit()
+    {
+        Application.Quit();
+    }
+
+    public void reanudar()
+    {
+        CanvasPausa.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        MovimientoGuino.pausa = false;
+    }
 }

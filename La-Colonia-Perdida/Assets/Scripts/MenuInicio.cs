@@ -14,7 +14,7 @@ public class MenuInicio : MonoBehaviour
     }
     public void exit()
     {
-        Debug.Log("He finalizado el juego");
         Application.Quit();
     }
+
 }
