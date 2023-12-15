@@ -1,36 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PetrelMovement : MonoBehaviour
+public class Petrel : MonoBehaviour
 {
-    public Vector3 startPosition;
-    public Vector3 endPosition;
-    public float speed = 2.0f;
+    [SerializeField] public float velocidad; // Velocidad de movimiento del Petrel
+    [SerializeField] private bool moviendoseHaciaDerecha; // Indicador de dirección
+    private Vector3 pos;
+    private Rigidbody2D rb;
+    public GameObject proyectilPrefab; // Asigna el prefab del proyectil en el Inspector
+    public float tiempoDeVidaCaca = 3.0f; // Tiempo de vida de las cacas
 
-    private Vector3 currentTarget;
-
-    void Start()
+    private void Start()
     {
-        currentTarget = endPosition;
+        pos = transform.position;
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        // Mueve el objeto hacia el objetivo actual
-        transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime);
+        // Mover el Leopardo
+        rb.velocity = new Vector2(velocidad, rb.velocity.y);
 
-        // Si el objeto alcanza el objetivo, cambia el objetivo
-        if (transform.position == currentTarget)
+        if (moviendoseHaciaDerecha && transform.position.x >= pos.x + 5f)
         {
-            if (currentTarget == startPosition)
-            {
-                currentTarget = endPosition;
-            }
-            else
-            {
-                currentTarget = startPosition;
-            }
+            CambiarDireccion();
+            LanzarProyectil();
+        }
+        else if (!moviendoseHaciaDerecha && transform.position.x <= pos.x - 5f)
+        {
+            CambiarDireccion();
+            LanzarProyectil();
         }
     }
+
+    // Método para cambiar la dirección
+    public void CambiarDireccion()
+    {
+        moviendoseHaciaDerecha = !moviendoseHaciaDerecha;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        velocidad *= -1;
+    }
+
+    // Método para lanzar el proyectil
+    private void LanzarProyectil()
+    {
+        if (proyectilPrefab != null)
+        {
+            GameObject caca = Instantiate(proyectilPrefab, transform.position, Quaternion.identity);
+            Destroy(caca, tiempoDeVidaCaca);
+        }
+        else
+        {
+            Debug.LogWarning("No se asignó un prefab de proyectil al Petrel.");
+        }
+    }
+
+    // Método para manejar la colisión con el jugador
+    
+    
 }

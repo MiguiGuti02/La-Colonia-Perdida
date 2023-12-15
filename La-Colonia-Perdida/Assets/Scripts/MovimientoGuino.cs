@@ -48,10 +48,15 @@ public class MovimientoGuino : MonoBehaviour
     public static int vida = 5;
     private SpriteRenderer spriteRenderer;
 
+    private bool ralentizado = false;
+    public float tRal;
+
     [SerializeField] private float velocidadRebote;
     [SerializeField] private Vector2 reboteDaño;
 
     [SerializeField] public Animator animator;
+
+    private bool estaDesl=false;
 
     // Start is called before the first frame update
     void Start()
@@ -73,8 +78,16 @@ public class MovimientoGuino : MonoBehaviour
     {
         if (!pausa)
         {
+            if (ralentizado == true && (Time.time-tRal)>2.0f)
+            {
+                vMax = vMax * 2;
+                aceleracion = aceleracion * 2;
+                ralentizado = false;
+            }
             deslizar = Input.GetAxisRaw("Vertical");
-            dirH = Input.GetAxisRaw("Horizontal");
+            if (deslizar != -1) { dirH = Input.GetAxisRaw("Horizontal"); }
+            else { dirH = 0; }
+            altura = transform.position.y;
             Aceleracion();
             Deslizamiento();
             if (Input.GetKeyDown(KeyCode.Space) && EnTierra())
@@ -85,7 +98,6 @@ public class MovimientoGuino : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
-            altura = transform.position.y;
             // Comprueba si el jugador est� por debajo del l�mite Y
             if (altura < limiteY)
             {
@@ -108,8 +120,8 @@ public class MovimientoGuino : MonoBehaviour
                 CanvasPausa.SetActive(true);
                 Time.timeScale = 0f;
             }
-            animator.SetFloat("Speed", MathF.Abs(dirH));
-            animator.SetBool("Dash", (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && Mathf.Abs(rb.velocity.x)>0.1);
+            animator.SetFloat("Speed", MathF.Abs(velocidad));
+            animator.SetBool("Dash", estaDesl);
             animator.SetBool("Jump", Input.GetKeyDown(KeyCode.Space) || rb.velocity.y<0);
             animator.SetBool("Grounded", EnTierra());
 
@@ -226,8 +238,9 @@ public class MovimientoGuino : MonoBehaviour
     }
 
  void Deslizamiento(){
-        if (deslizar == -1 && EnTierra() && velocidad!=0)
+        if (deslizar == -1 && Math.Abs(velocidad)!=0)
         {
+            estaDesl = true;
             if (altura < transform.position.y)
             {
                 spriteRenderer.color = Color.white;
@@ -236,7 +249,6 @@ public class MovimientoGuino : MonoBehaviour
             }
             else
             {
-                spriteRenderer.color = Color.red;
                 deslizando = true;
                 if (altura > transform.position.y) deceleracion = 0f;
                 else deceleracion = 4f;
@@ -245,7 +257,7 @@ public class MovimientoGuino : MonoBehaviour
         }
         else
         {
-            spriteRenderer.color = Color.white;
+            estaDesl = false;
             deceleracion = 12f;
             deslizando = false;
         }
@@ -281,6 +293,14 @@ public class MovimientoGuino : MonoBehaviour
             }
             updateTextKrill();
             updateTextVida();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Caca")
+        {
+            ralentizado = true;
+            vMax = vMax / 2;
+            aceleracion = aceleracion / 2;
+            tRal = Time.time;
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Sardina")
