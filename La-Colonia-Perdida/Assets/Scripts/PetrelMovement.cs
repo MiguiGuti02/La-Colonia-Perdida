@@ -3,7 +3,7 @@
 public class Petrel : MonoBehaviour
 {
     [SerializeField] public float velocidad; // Velocidad de movimiento del Petrel
-    [SerializeField] private bool moviendoseHaciaDerecha; // Indicador de dirección
+    private bool moviendoseHaciaDerecha = true; // Indicador de dirección
     private Vector3 pos;
     private Rigidbody2D rb;
     public GameObject proyectilPrefab; // Asigna el prefab del proyectil en el Inspector
@@ -54,7 +54,5 @@ public class Petrel : MonoBehaviour
         }
     }
 
-    // Método para manejar la colisión con el jugador
-    
-    
+
 }

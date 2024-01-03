@@ -58,6 +58,12 @@ public class MovimientoGuino : MonoBehaviour
 
     private bool estaDesl=false;
 
+    //variables ralentizacion
+    public float velocidadRalentizada = 2f;
+    public float duracionRalentizacion = 3f;
+    private float tiempoFinRalentizacion;
+    private bool ralentizando = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -199,6 +205,18 @@ public class MovimientoGuino : MonoBehaviour
 
     private void Aceleracion()
     {
+
+
+        if (ralentizando && Time.time < tiempoFinRalentizacion && dirH != 0)
+        {
+
+            velocidad = dirH * velocidadRalentizada;
+        }
+        else
+        {
+            ralentizando = false;
+        }
+
         if (dirH == 0)
         {
             if (Mathf.Abs(velocidad) <= 0.1f)
@@ -297,10 +315,7 @@ public class MovimientoGuino : MonoBehaviour
         }
         if (collision.gameObject.tag == "Caca")
         {
-            ralentizado = true;
-            vMax = vMax / 2;
-            aceleracion = aceleracion / 2;
-            tRal = Time.time;
+            RalentizarJugador();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Sardina")
@@ -444,6 +459,13 @@ public class MovimientoGuino : MonoBehaviour
         rt.sizeDelta = new Vector2(Screen.width, Screen.height);
     }
 
-
-
+    // Método para ralentizar al jugador
+    public void RalentizarJugador()
+    {
+        ralentizando = true;
+        tiempoFinRalentizacion = Time.time + duracionRalentizacion;
     }
+
+
+
+}

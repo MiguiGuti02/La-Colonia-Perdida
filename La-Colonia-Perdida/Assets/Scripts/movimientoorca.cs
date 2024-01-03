@@ -5,8 +5,8 @@ using UnityEngine;
 public class movimientoorca : MonoBehaviour
 {
 
-    public float minY;
-    public float maxY;
+    [SerializeField]public float minY;
+    [SerializeField]public float maxY;
     public float TiempoEspera = 5f;
     public float Velocidad = 1f;
 

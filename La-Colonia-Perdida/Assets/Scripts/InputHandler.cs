@@ -11,18 +11,25 @@ public class InputHandler : MonoBehaviour
 
     [SerializeField] GameObject Anticaidas;
     [SerializeField] GameObject BotonAntiC;
+    [SerializeField] GameObject ON;
+    [SerializeField] GameObject OFF;
 
-    Renderer botonRenderer;
+
+    [SerializeField] SpriteRenderer botonSpriteRenderer;
+    [SerializeField] Sprite SpriteOff;
+    [SerializeField] Sprite SpriteOn;
 
 
     private bool aComp = false;
     // Start is called before the first frame update
     void Start()
     {
-        botonRenderer = BotonAntiC.GetComponent<Renderer>();
-        botonRenderer.material.SetColor("_Color", Color.red);
+        botonSpriteRenderer.sprite = SpriteOff;
         Anticaidas.SetActive(false);
+        ON.SetActive(false);
+        OFF.SetActive(true);
         aComp = false;
+
 
     }
 
@@ -56,13 +63,17 @@ public class InputHandler : MonoBehaviour
             {
                 Anticaidas.SetActive(true);
                 aComp = true;
-                botonRenderer.material.SetColor("_Color", Color.green);
+                botonSpriteRenderer.sprite = SpriteOn;
+                ON.SetActive(true);
+                OFF.SetActive(false);
             }
             else
             {
                 Anticaidas.SetActive(false);
                 aComp=false;
-                botonRenderer.material.SetColor("_Color", Color.red);
+                botonSpriteRenderer.sprite = SpriteOff;
+                ON.SetActive(false);
+                OFF.SetActive(true);
             }
         }
     }
